@@ -32,9 +32,6 @@
 
 <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Kapcsolat</a>
-  </div>
-  <div class="container-fluid">
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="index.html">A Tóról</a>
@@ -61,19 +58,39 @@
 
 <main>
 <div class="container-fluid"><br>
- <form action="/action_page.php">
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email">
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Név</label>
+    <input type="Text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+    </div>
+<div class="mb-3">
+  <label for="exampleFormControlInput2" class="form-label">Email</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Üzenet</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+	</div>
+	
+<div class="form-check">
+<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+<label class="form-check-label" for="flexRadioDefault1">
+Kérek választ.
+</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+<label class="form-check-label" for="flexRadioDefault2">
+Nem kérek választ.
+</label>
+</div>
+<div class="checkbox">
+    <label><input type="checkbox">Hozzájárulok az adataim tárolásához.</label>
   </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd">
-  </div>
-  <div class="checkbox">
-    <label><input type="checkbox"> Remember me</label>
-  </div>
+<div>
   <button type="submit" class="btn btn-default">Submit</button>
+  <button type="reset" class="btn btn-default">Reset Form</button>
+</div>
 </form> 
 </div>
 </main>
