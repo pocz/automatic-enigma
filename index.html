@@ -1,94 +1,125 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="hu">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/starter.css">
-    <title>A Tóról</title>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/css/starter.css" />
+        <title>A Tóról</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link href="style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" />
 
-    <script>
-        function toggleTheme() {
-            var theme = document.getElementsByTagName('link')[2];
-            if (theme.getAttribute('href') == 'style.css') {
-                theme.setAttribute('href', 'dark.css');
-            } else {
-                theme.setAttribute('href', 'style.css');
+        <script>
+            function toggleTheme() {
+                var theme = document.getElementsByTagName('link')[2];
+                if (theme.getAttribute('href') == 'style.css') {
+                    theme.setAttribute('href', 'dark.css');
+                } else {
+                    theme.setAttribute('href', 'style.css');
+                }
             }
-        }
-    </script>
+        </script>
+    </head>
 
-  </head>
+    <body>
+        <div class="container-fluid topbar">
+            <img class="img-fluid" src="/media/dsc_00011-crop.jpg" alt="" />
+        </div>
 
-<body>
-<div class="container-fluid topbar">
-  <img class="img-fluid" src="/media/dsc_00011-crop.jpg" alt="">
-</div>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">A Tóról</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fishing.html">Horgászat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="boating.html">Csónakozás</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kapcsolat</a>
+                    </li>
+                    <li>
+                        <button onclick="toggleTheme()" type="button" class="btn btn-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"
+                                ></path>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="/">A Tóról</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="fishing.html">Horgászat</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="boating.html">Csónakozás</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Kapcsolat</a>
-      </li>
-      <li>
-        <button onclick="toggleTheme()" type="button" class="btn btn-secondary">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
-            <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"></path>
-          </svg>
-        </button>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<main>
-<div class="container-fluid"><br>
-  <header><strong><p>A Szombathelyi Csónakázó-tó látogatásakor a belvároshoz közel lehet, idillikus környezetben sportolni vagy pihenni.</p><p> Ha a horgászat érdekli tekintsen a <a href="fishing.html">Horgászat</a> oldalunkra. Ha a csónakozás akkor a <a href="boating.html">Csónakozással</a> kapcsolatos menüpontra.</p></strong>
-<video controls loop>
-    <source src="/media/video/video01.webm" type="video/webm">
-</video>
-</header>
-    <article>
-    <section>
-  <p>A két, egymás mellett fekvő mesterséges tó Szombathely igazi rekreációs központja. A városiak szemében a népszerű „Csótó” nagy vonzerőt jelent, akár pihenésről, sétáról, futásról vagy horgászatról van szó. Szép időben pedig - nevéhez méltóan – csónakázhatunk vagy vízibiciklizhetünk a tavon, de akár fagyizhatunk és friss kávét is kortyolhatunk a partján.</p>
-  <a href="/media/a_torol-1.jpg"><img  src="/media/a_torol-1.jpg" alt="a tó madártávlatból"></a>
-  <p>A Szombathelyi Csónakázó-tavat a város zöldövezeti részében találjuk csendes, nyugodt környéken, friss levegővel és visszafogott autóforgalommal a két szélén. A mesterséges tómedret 1961-ben egy hatalmas agyaggödör helyén létesítették. Vizének táplálásáért az Arany-patak a felelős, ami nyugati irányból (a Kőszegi-hegység felől) érkezik ide. A környék az évtizedek során Szombathely közkedvelt pihenőövezetévé vált.</p>
-  <a href="/media/a_torol-2.jpg"><img  src="/media/a_torol-2.jpg" alt="a szigetecske a tóban"></a>
-<p>Látványos és üde színfoltja a tó közepén hídakkal megközelíthető sziget, gazdag növényvilággal.</p>
-  <a href="/media/dsc_00311.jpg"><img  src="/media/dsc_00311.jpg" alt="tómenti ösvény"></a>
-<p>1967-ben a megye arborétumaiból fákat telepítettek a tó környékére, így az évek alatt a Csónakázótó és a környezete a város legszebb, legkellemesebb részévé vált.</p>
-  <a href="/media/dsc_00081.jpg"><img  src="/media/dsc_00081.jpg" alt="tómenti ösvény"></a>
-<p>A szigetet romantikusan girbegurba, apró-kavicsos ösvényeken lehet bebarangolni. Díszfák és bokrok, virágágyások, az Emberpár-szobor és padok nyújtanak felüdülést testnek és léleknek. Nyugati oldalában fából készített napozóágyak kínálják magukat egész éven át, ahol egyébként csónakkal is ki lehet kötni. A sziget minden részéről kellemes a kilátás, de különösen az északiról, ahonnan a Kőszegi-hegység vonulata is remekül kivehető.</p>
-  <a href="/media/dsc_0033.jpg"><img  src="/media/dsc_0033.jpg" alt="a tó a tópartról"></a>
-    </section>
-    <section>
-<p>Az érdekes alakból eredően azonban olyan áramlatok alakulnak ki, melyek bizonyos helyen az iszapot lerakják, leveleket összehordják. A part természetes, a fák gyökerei a vízig is lehúzódnak, de a szegélyzónában gyér sást és gyékényt is találunk A Csónakázó-tó története megegyezik a Horgász-tóéval. Kikövezett, sétányon körbejárható.</p>
-  <a href="/media/vmav5hfmrdp44jct1508841957.jpg"><img  src="/media/vmav5hfmrdp44jct1508841957.jpg" alt="a tó egy stégről"></a>
-<p>Mindezeken túl sport- és kulturális események helyszíne: a Szombathelyi Futóklub rendszeresen szervez közösségi futásokat, illetve minden nyáron megrendezik a látványos Sárkányhajó Fesztivált is. Júniusban, Szentiván-éjkor (illetve az ahhoz legközelebb eső szombaton) pedig az éjszakába nyúló programsorozat várja a látogatókat („Szentivánéji Vigasságok”). A tó pompás hátteret ad az éjféli tűzijátéknak.</p>
-  <a href="/media/rcqj17iinqjglgqn1508841967.jpg"><img  src="/media/rcqj17iinqjglgqn1508841967.jpg" alt="kacsák a tó szélén"></a>
-<aside><p>A Csónakázótóra az 1964-ben épített 52 méter hosszúságú hidat 2008-ban felújították. Kapott egy új kovácsoltvas korlátot és kandeláberes világítást is, így éjszaka hangulatos fények alatt sétálgatva lehet romantikázni.</p></aside>
-<p> A helyiek közkedvelt kirándulóhelye a tó és környéke, van, aki csak pihenget, de sokak választják különböző sportok űzésének helyszínéül. A tó egyébként nagyon népszerű szolgáltatása a vízibiciklizési, valamint a csónakázási lehetőség.</p><p></p>
-    </section>
-</article>
-</div>
-</main>
-</div>
-<footer>
-Készült: 2022
-</footer>
-</body>
+        <main>
+            <div class="container-fluid">
+                <br />
+                <header>
+                    <strong>
+                        <p>A Szombathelyi Csónakázó-tó látogatásakor a belvároshoz közel lehet, idillikus környezetben sportolni vagy pihenni.</p>
+                        <p>Ha a horgászat érdekli tekintsen a <a href="fishing.html">Horgászat</a> oldalunkra. Ha a csónakozás akkor a <a href="boating.html">Csónakozással</a> kapcsolatos menüpontra.</p>
+                    </strong>
+                    <video controls loop>
+                        <source src="/media/video/video01.webm" type="video/webm" />
+                    </video>
+                </header>
+                <article>
+                    <section>
+                        <p>
+                            A két, egymás mellett fekvő mesterséges tó Szombathely igazi rekreációs központja. A városiak szemében a népszerű „Csótó” nagy vonzerőt jelent, akár pihenésről, sétáról, futásról vagy horgászatról van szó. Szép
+                            időben pedig - nevéhez méltóan – csónakázhatunk vagy vízibiciklizhetünk a tavon, de akár fagyizhatunk és friss kávét is kortyolhatunk a partján.
+                        </p>
+                        <a href="/media/a_torol-1.jpg"><img src="/media/a_torol-1.jpg" alt="a tó madártávlatból" /></a>
+                        <p>
+                            A Szombathelyi Csónakázó-tavat a város zöldövezeti részében találjuk csendes, nyugodt környéken, friss levegővel és visszafogott autóforgalommal a két szélén. A mesterséges tómedret 1961-ben egy hatalmas
+                            agyaggödör helyén létesítették. Vizének táplálásáért az Arany-patak a felelős, ami nyugati irányból (a Kőszegi-hegység felől) érkezik ide. A környék az évtizedek során Szombathely közkedvelt pihenőövezetévé vált.
+                        </p>
+                        <a href="/media/a_torol-2.jpg"><img src="/media/a_torol-2.jpg" alt="a szigetecske a tóban" /></a>
+                        <p>Látványos és üde színfoltja a tó közepén hídakkal megközelíthető sziget, gazdag növényvilággal.</p>
+                        <a href="/media/dsc_00311.jpg"><img src="/media/dsc_00311.jpg" alt="tómenti ösvény" /></a>
+                        <p>1967-ben a megye arborétumaiból fákat telepítettek a tó környékére, így az évek alatt a Csónakázótó és a környezete a város legszebb, legkellemesebb részévé vált.</p>
+                        <a href="/media/dsc_00081.jpg"><img src="/media/dsc_00081.jpg" alt="tómenti ösvény" /></a>
+                        <p>
+                            A szigetet romantikusan girbegurba, apró-kavicsos ösvényeken lehet bebarangolni. Díszfák és bokrok, virágágyások, az Emberpár-szobor és padok nyújtanak felüdülést testnek és léleknek. Nyugati oldalában fából
+                            készített napozóágyak kínálják magukat egész éven át, ahol egyébként csónakkal is ki lehet kötni. A sziget minden részéről kellemes a kilátás, de különösen az északiról, ahonnan a Kőszegi-hegység vonulata is
+                            remekül kivehető.
+                        </p>
+                        <a href="/media/dsc_0033.jpg"><img src="/media/dsc_0033.jpg" alt="a tó a tópartról" /></a>
+                    </section>
+                    <section>
+                        <p>
+                            Az érdekes alakból eredően azonban olyan áramlatok alakulnak ki, melyek bizonyos helyen az iszapot lerakják, leveleket összehordják. A part természetes, a fák gyökerei a vízig is lehúzódnak, de a szegélyzónában
+                            gyér sást és gyékényt is találunk A Csónakázó-tó története megegyezik a Horgász-tóéval. Kikövezett, sétányon körbejárható.
+                        </p>
+                        <a href="/media/vmav5hfmrdp44jct1508841957.jpg"><img src="/media/vmav5hfmrdp44jct1508841957.jpg" alt="a tó egy stégről" /></a>
+                        <p>
+                            Mindezeken túl sport- és kulturális események helyszíne: a Szombathelyi Futóklub rendszeresen szervez közösségi futásokat, illetve minden nyáron megrendezik a látványos Sárkányhajó Fesztivált is. Júniusban,
+                            Szentiván-éjkor (illetve az ahhoz legközelebb eső szombaton) pedig az éjszakába nyúló programsorozat várja a látogatókat („Szentivánéji Vigasságok”). A tó pompás hátteret ad az éjféli tűzijátéknak.
+                        </p>
+                        <a href="/media/rcqj17iinqjglgqn1508841967.jpg"><img src="/media/rcqj17iinqjglgqn1508841967.jpg" alt="kacsák a tó szélén" /></a>
+                        <aside>
+                            <p>
+                                A Csónakázótóra az 1964-ben épített 52 méter hosszúságú hidat 2008-ban felújították. Kapott egy új kovácsoltvas korlátot és kandeláberes világítást is, így éjszaka hangulatos fények alatt sétálgatva lehet
+                                romantikázni.
+                            </p>
+                        </aside>
+                        <p>
+                            A helyiek közkedvelt kirándulóhelye a tó és környéke, van, aki csak pihenget, de sokak választják különböző sportok űzésének helyszínéül. A tó egyébként nagyon népszerű szolgáltatása a vízibiciklizési, valamint a
+                            csónakázási lehetőség.
+                        </p>
+                        <p></p>
+                    </section>
+                </article>
+            </div>
+        </main>
+        <footer>
+            Készült: 2022
+        </footer>
+    </body>
 </html>
+

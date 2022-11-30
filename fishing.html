@@ -1,76 +1,92 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="hu">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/css/starter.css">
-    <title>Horgászat</title>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="assets/css/starter.css" />
+        <title>Horgászat</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link href="style.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" />
 
-    <script>
-        function toggleTheme() {
-            var theme = document.getElementsByTagName('link')[2];
-            if (theme.getAttribute('href') == 'style.css') {
-                theme.setAttribute('href', 'dark.css');
-            } else {
-                theme.setAttribute('href', 'style.css');
+        <script>
+            function toggleTheme() {
+                var theme = document.getElementsByTagName('link')[2];
+                if (theme.getAttribute('href') == 'style.css') {
+                    theme.setAttribute('href', 'dark.css');
+                } else {
+                    theme.setAttribute('href', 'style.css');
+                }
             }
-        }
-    </script>
+        </script>
+    </head>
 
-  </head>
+    <body>
+        <div class="container-fluid topbar">
+            <img class="img-fluid" src="/media/dsc_00011-crop.jpg" alt="" />
+        </div>
 
-<body>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">A Tóról</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="fishing.html">Horgászat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="boating.html">Csónakozás</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Kapcsolat</a>
+                    </li>
+                    <li>
+                        <button onclick="toggleTheme()" type="button" class="btn btn-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"
+                                ></path>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
-<div class="container-fluid topbar">
-  <img class="img-fluid" src="/media/dsc_00011-crop.jpg" alt="">
-</div>
-
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="/">A Tóról</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="fishing.html">Horgászat</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="boating.html">Csónakozás</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Kapcsolat</a>
-      </li>
-      <li>
-        <button onclick="toggleTheme()" type="button" class="btn btn-secondary">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
-            <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"></path>
-          </svg>
-        </button>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<main>
-<div class="container-fluid"><br>
-<p>A Horgász-tó kisebb, ez némileg rejtettebb is, nincs annyira szem előtt, mint nagyobb társa. A Falumúzeum felőli rész csendesebb, ez az egyik legjobb horgászhely is, itt húzódik ugyanis az egykori patakmeder. A legmélyebb pontot is itt találjuk, bár a jellemzően két méteres átlagmélység egyben aránylag egyenletes medret is jelent, ahogy az egy báger gödörnél megszokott.</p>
-<figure>
- <a href="/media/horgaszat-1.jpg"><img  src="/media/horgaszat-1.jpg" alt="medertérkép"></a>
-<figcaption>A Szombathelyi Csonakázó Tó Medertérképe - mederterkep.com</figcaption>
-</figure>
-<p>Kerülete közel 1500 méter, szélessége 200-250 méter. Két árok húzódik a mederben (kb. 120-130 méterre találhatók az árkok), ezek kerülik a mesterségesen kialakított szigetet. Mindenhol hirtelen mélyülő, az átlagos mélységet (1,7 m) hamar el lehet érni. Az északi sarok némileg sekélyebb: 1,6-1,4 méteres.</p>
-  <a href="/media/tukrozodes-es-horgasz.jpg"><img  src="/media/tukrozodes-es-horgasz.jpg" alt="horgász a tóparton"></a>
-<p>Egész évben csónakból, a szigetről, és télen lékről is tilos horgászni! A süllő a fő ragadozó hal. A süllő a mesterségesen kialakított tavon minden évben megtalálja az ívási lehetőséget így szinte minden évben szépszámú süllőivadékkal, találkozhatunk befolyók környékén. A tóban nagy számban előforduló küszcsapatokat a nyári időszakban állandó balin rablások zavarják. A balinozás nem tartozik a fő horgászmódszerek közé, talán ennek is köszönhető, hogy nagy számban találhatóak a tóban nagy méretű balinok. (Nem ritkák a 6-8 kg-os példányok sem) Az említettek mellett az amur, a keszegfélék és a kárász számítanak a fő halfajoknak, de compó is előfordul az egyébként sok apróhalat is rejtő vízben.</p>
-<p>A 2015.évben megvalósuló városfejlesztési munkálatoknak köszönhetően a Szombathelyi Csónakázó és Horgásztó teljesen megújult. A sétány új burkolatot kapott, a közvilágítás felújításra került, emellett 35 db horgászstég került kialakításra, melyek akadálymentesítettek és egy-egy paddal is rendelkezek. A horgászat megkezdésekor ezen stégeket kell elsődlegesen igénybe venni.</p>
-</div>
-</main>
-<footer>
-Készült: 2022
-</footer>
-</body>
+        <main>
+            <div class="container-fluid">
+                <br />
+                <p>
+                    A Horgász-tó kisebb, ez némileg rejtettebb is, nincs annyira szem előtt, mint nagyobb társa. A Falumúzeum felőli rész csendesebb, ez az egyik legjobb horgászhely is, itt húzódik ugyanis az egykori patakmeder. A
+                    legmélyebb pontot is itt találjuk, bár a jellemzően két méteres átlagmélység egyben aránylag egyenletes medret is jelent, ahogy az egy báger gödörnél megszokott.
+                </p>
+                <figure>
+                    <a href="/media/horgaszat-1.jpg"><img src="/media/horgaszat-1.jpg" alt="medertérkép" /></a>
+                    <figcaption>A Szombathelyi Csonakázó Tó Medertérképe - mederterkep.com</figcaption>
+                </figure>
+                <p>
+                    Kerülete közel 1500 méter, szélessége 200-250 méter. Két árok húzódik a mederben (kb. 120-130 méterre találhatók az árkok), ezek kerülik a mesterségesen kialakított szigetet. Mindenhol hirtelen mélyülő, az átlagos
+                    mélységet (1,7 m) hamar el lehet érni. Az északi sarok némileg sekélyebb: 1,6-1,4 méteres.
+                </p>
+                <a href="/media/tukrozodes-es-horgasz.jpg"><img src="/media/tukrozodes-es-horgasz.jpg" alt="horgász a tóparton" /></a>
+                <p>
+                    Egész évben csónakból, a szigetről, és télen lékről is tilos horgászni! A süllő a fő ragadozó hal. A süllő a mesterségesen kialakított tavon minden évben megtalálja az ívási lehetőséget így szinte minden évben szépszámú
+                    süllőivadékkal, találkozhatunk befolyók környékén. A tóban nagy számban előforduló küszcsapatokat a nyári időszakban állandó balin rablások zavarják. A balinozás nem tartozik a fő horgászmódszerek közé, talán ennek is
+                    köszönhető, hogy nagy számban találhatóak a tóban nagy méretű balinok. (Nem ritkák a 6-8 kg-os példányok sem) Az említettek mellett az amur, a keszegfélék és a kárász számítanak a fő halfajoknak, de compó is előfordul az
+                    egyébként sok apróhalat is rejtő vízben.
+                </p>
+                <p>
+                    A 2015.évben megvalósuló városfejlesztési munkálatoknak köszönhetően a Szombathelyi Csónakázó és Horgásztó teljesen megújult. A sétány új burkolatot kapott, a közvilágítás felújításra került, emellett 35 db horgászstég
+                    került kialakításra, melyek akadálymentesítettek és egy-egy paddal is rendelkezek. A horgászat megkezdésekor ezen stégeket kell elsődlegesen igénybe venni.
+                </p>
+            </div>
+        </main>
+        <footer>
+            Készült: 2022
+        </footer>
+    </body>
 </html>
+
