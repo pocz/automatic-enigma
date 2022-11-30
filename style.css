@@ -7,18 +7,42 @@ body {
 main div {
     background-color: #FFF;
     border: 1px solid black;
+    box-shadow: 5px 5px 5px #888888;
 }
 
 main img {
     box-shadow: 5px 5px 5px #888888;
+    display: block;
+    height: auto;
+    width: 50%;
+    margin: 1em auto;
+}
+
+main p {
+    text-align:justify;
+    margin: 1em 10%;
+}
+
+main h1 {
+    text-align:justify;
+    margin: 2% 10%;
+}
+
+main table {
+    margin: auto 10%;
+    border-collapse: collapse;
+    width: 75%;
+    margin-bottom: 10%;
 }
 
 .topbar {
     background-color: #000;
 }
 
-.inline-responsive-image {
-display: block;
-height: auto;
-width: 50%
+.mb-3 label {
+    margin-left: 1%;
+}
+
+.checkbox label {
+    margin-left: 2px;
 }
