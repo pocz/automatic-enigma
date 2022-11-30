@@ -28,6 +28,11 @@ main h1 {
     margin: 2% 10%;
 }
 
+main h2 {
+    text-align:justify;
+    margin: 2% 10%;
+}
+
 main table {
     margin: auto 10%;
     border-collapse: collapse;
