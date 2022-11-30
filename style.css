@@ -17,7 +17,8 @@ main img {
     background-color: #000;
 }
 
-.illust-resp {
+.inline-responsive-image {
+display: block;
 height: auto;
-width: 75%
+width: 50%
 }
