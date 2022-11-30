@@ -39,6 +39,19 @@ details {
     margin: 1em 10%;
 }
 
+figcaption {
+    text-align:center;
+    margin: 0 10%;
+}
+
+video {
+    box-shadow: 5px 5px 5px #888888;
+    display: block;
+    height: auto;
+    width: 50%;
+    margin: 1em auto;
+}
+
 .topbar {
     background-color: #000;
 }
