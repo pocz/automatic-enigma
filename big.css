@@ -1,23 +1,19 @@
 body {
-    background-color: grey;
+    background-image: url('./media/watercolor_bg.png');
     background-repeat: repeat-y;
-    background-size: cover
-}
-
-main {
-    color: white;
-}
-
-a {
-    color: #87cefa;
+    background-size: cover;
+    font-size: 2rem;
+    line-height: 2;
 }
 
 main div {
-    background-color: #000;
+    background-color: #FFF;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px #888888;
 }
 
 main img {
-    border: 1px solid white;
+    box-shadow: 5px 5px 5px #888888;
     display: block;
     height: auto;
     width: 50%;
@@ -67,6 +63,14 @@ video {
     background-color: #000;
 }
 
+.nav-link {
+    color: white;
+}
+
+.active {
+    font-weight: bolder;
+}
+
 .mb-3 label {
     margin-left: 1%;
 }
@@ -75,8 +79,10 @@ video {
     margin-left: 2px;
 }
 
-.btn {
-    color:white;
+.btn-dark {
+    font-size: 2rem;
+    margin:1rem;
+    color: white;
 }
 
 .skip {
@@ -93,3 +99,19 @@ video {
   width: auto;
   height: auto;
 }
+
+main a:link {
+  color: #0000ff;
+}
+
+main a:visited {
+  color:#3c3cff;
+}
+
+main a:hover {
+  color: red;
+}
+
+main a:active {
+  color: yellow;
+} 

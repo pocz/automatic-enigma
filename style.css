@@ -68,3 +68,38 @@ video {
 .checkbox label {
     margin-left: 2px;
 }
+
+.btn-dark {
+    margin:2px;
+}
+
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+main a:link {
+  color: #0000ff;
+}
+
+main a:visited {
+  color: #7b7bff;
+}
+
+main a:hover {
+  color: red;
+}
+
+main a:active {
+  color: yellow;
+} 
