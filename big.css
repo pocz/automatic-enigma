@@ -115,3 +115,7 @@ main a:hover {
 main a:active {
   color: yellow;
 } 
+
+table caption {
+	color:black;
+}
